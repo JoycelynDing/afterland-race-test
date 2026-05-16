@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, Compass, RefreshCw, ChevronRight, Moon, Sun } from 'lucide-react';
 import { QUIZ_DATA, Option } from './constants';
-import pageBackground from './assets/afterland-reading-table.jpg';
 
 type AppState = 'intro' | 'quiz' | 'result';
 
@@ -93,7 +92,12 @@ export default function App() {
     ? 'relative z-10 mx-auto flex min-h-[calc(100vh-2rem)] w-full items-center justify-center sm:min-h-[calc(100vh-3rem)] md:min-h-[calc(100vh-5rem)]'
     : 'relative z-10 mx-auto flex w-full justify-center md:min-h-[calc(100vh-5rem)] md:items-center';
   const pageBackgroundStyle = {
-    backgroundImage: `linear-gradient(180deg, rgba(17, 10, 6, 0.84) 0%, rgba(44, 26, 15, 0.56) 38%, rgba(17, 10, 6, 0.84) 100%), url(${pageBackground})`,
+    backgroundImage: `
+      radial-gradient(circle at 50% -10%, rgba(248, 223, 174, 0.24) 0%, transparent 34%),
+      radial-gradient(circle at 15% 18%, rgba(126, 73, 34, 0.28) 0%, transparent 30%),
+      radial-gradient(circle at 80% 78%, rgba(68, 38, 19, 0.38) 0%, transparent 34%),
+      linear-gradient(180deg, rgba(17, 10, 6, 0.94) 0%, rgba(47, 28, 16, 0.86) 42%, rgba(17, 10, 6, 0.96) 100%)
+    `,
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
   };

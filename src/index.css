@@ -1,27 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Spectral:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+SC:wght@400;600;700&family=Spectral:ital,wght@0,400;0,700;1,400&display=swap');
 @import "tailwindcss";
 
-@font-face {
-  font-family: "NanoOldSongA";
-  src:
-    local("NanoOldSongA-Regular"),
-    local("NanoOldSongA"),
-    url("./assets/fonts/NanoOldSongA-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  unicode-range:
-    U+2E80-2EFF,
-    U+3000-303F,
-    U+3400-4DBF,
-    U+4E00-9FFF,
-    U+F900-FAFF,
-    U+FF00-FFEF;
-}
-
 @theme {
-  --font-display: "NanoOldSongA", "Cinzel", serif;
-  --font-serif: "NanoOldSongA", "Georgia", "Spectral", serif;
+  --font-display: "Noto Serif SC", "Cinzel", serif;
+  --font-serif: "Noto Serif SC", "Georgia", "Spectral", serif;
   --color-parchment: #ede4d3;
   --color-ink: #1a1512;
   --color-gold: #8b7355;
